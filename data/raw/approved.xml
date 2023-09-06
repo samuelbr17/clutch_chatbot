@@ -1,0 +1,103 @@
+<LoanApplication>
+  <StageStatus xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Stage>Reviewed</Stage>
+    <Status>Approved</Status>
+  </StageStatus>
+  <Collaterals xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Collateral ID="98765432">
+      <Make>FORD</Make>
+      <Model>Mustang GT</Model>
+      <Year>2023</Year>
+      <Mileage>15</Mileage>
+      <VehicleValuation ValuationType="MSRP">52000.0000</VehicleValuation>
+      <Ordinal>1</Ordinal>
+      <IsNew>false</IsNew>
+      <IsPrimary>true</IsPrimary>
+      <PurchasePrice>50000.0000</PurchasePrice>
+      <VehicleOptions>
+        <Option>Navigation System</Option>
+        <Option>Leather Seats</Option>
+        <Option>Premium Sound System</Option>
+      </VehicleOptions>
+      <AuditData>
+        <UpdatedOn>2023-08-16T09:30:00.0-07:00</UpdatedOn>
+      </AuditData>
+      <OtherData>
+        <DMVData>
+          <DMVLeinHolder>
+            <VehicleID>987654</VehicleID>
+            <LoanNumber />
+            <ApplicationID>987654321</ApplicationID>
+          </DMVLeinHolder>
+          <DMVRegistration>
+            <VehicleID>987654</VehicleID>
+            <IsNewOwner>true</IsNewOwner>
+            <SameAsApplicant>true</SameAsApplicant>
+            <ApplicationID>987654321</ApplicationID>
+            <DMVOwner>
+              <SameAsApplicant>true</SameAsApplicant>
+              <DriversLicenseNumber />
+              <IsPrimary>true</IsPrimary>
+              <DateOfBirth>1985-05-20</DateOfBirth>
+              <ApplicationID>987654321</ApplicationID>
+            </DMVOwner>
+          </DMVRegistration>
+        </DMVData>
+        <IsSalvageTitle>false</IsSalvageTitle>
+      </OtherData>
+    </Collateral>
+  </Collaterals>
+  <Decision ID="87654321" DecisionType="System Decision" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Status>Approved</Status>
+    <Date>2023-08-16T09:45:00.0-07:00</Date>
+    <IsCurrent>true</IsCurrent>
+    <Rate>2.8750</Rate>
+    <Amount>45000.0000</Amount>
+    <Term>72</Term>
+    <Tier>B</Tier>
+    <UserCode>123</UserCode>
+    <PreApproval>
+      <WasPreApprovedChecked>true</WasPreApprovedChecked>
+      <IsPreApproved>true</IsPreApproved>
+    </PreApproval>
+    <Reasons>
+      <Reason>Strong credit score</Reason>
+      <Reason>Stable income</Reason>
+    </Reasons>
+    <Stipulations>
+      <Stipulation ID="98765432">
+        <Description>Proof of Residence</Description>
+        <AuditData />
+        <OtherData>
+          <IsCompleted>true</IsCompleted>
+          <IsWaived>true</IsWaived>
+        </OtherData>
+      </Stipulation>
+      <Stipulation ID="98765433">
+        <Description>Proof of Income</Description>
+        <AuditData />
+        <OtherData>
+          <IsCompleted>true</IsCompleted>
+          <IsWaived>true</IsWaived>
+        </OtherData>
+      </Stipulation>
+    </Stipulations>
+    <SpecialConsiderations>
+      <Consideration>Low debt-to-income ratio</Consideration>
+      <Consideration>Long-standing employment history</Consideration>
+    </SpecialConsiderations>
+    <AuditData>
+      <CreatedByID>12345</CreatedByID>
+      <CreatedByName>SYSTEM</CreatedByName>
+      <UpdatedOn>2023-08-16T09:45:15.0-07:00</UpdatedOn>
+    </AuditData>
+    <OtherData>
+      <IsManual>false</IsManual>
+      <Notations>
+        <Notation>Reduced rate for excellent credit</Notation>
+        <Notation>Waived processing fee</Notation>
+      </Notations>
+      <EstimatedPayment>635.21</EstimatedPayment>
+    </OtherData>
+  </Decision>
+</LoanApplication>

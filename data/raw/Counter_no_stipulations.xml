@@ -1,0 +1,86 @@
+<LoanApplication>
+  <StageStatus xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Stage>Initial</Stage>
+    <Status>Counter</Status>
+  </StageStatus>
+  <Collaterals xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Collateral ID="123456">
+      <Make>NISSAN</Make>
+      <Model>Altima</Model>
+      <Year>2022</Year>
+      <Mileage>15000</Mileage>
+      <VehicleValuation ValuationType="MSRP">28000.0000</VehicleValuation>
+      <Ordinal>1</Ordinal>
+      <IsNew>false</IsNew>
+      <IsPrimary>true</IsPrimary>
+      <PurchasePrice>26000.0000</PurchasePrice>
+      <VehicleOptions>
+        <Option>Push Button Start</Option>
+        <Option>Blind Spot Warning</Option>
+      </VehicleOptions>
+      <AuditData>
+        <UpdatedOn>2023-08-16T12:00:00.0-07:00</UpdatedOn>
+      </AuditData>
+      <OtherData>
+        <DMVData>
+          <DMVLeinHolder>
+            <VehicleID>123456</VehicleID>
+            <LoanNumber />
+            <ApplicationID>123456789</ApplicationID>
+          </DMVLeinHolder>
+          <DMVRegistration>
+            <VehicleID>123456</VehicleID>
+            <IsNewOwner>true</IsNewOwner>
+            <SameAsApplicant>true</SameAsApplicant>
+            <ApplicationID>123456789</ApplicationID>
+            <DMVOwner>
+              <SameAsApplicant>true</SameAsApplicant>
+              <DriversLicenseNumber />
+              <IsPrimary>true</IsPrimary>
+              <DateOfBirth>1995-06-25</DateOfBirth>
+              <ApplicationID>123456789</ApplicationID>
+            </DMVOwner>
+          </DMVRegistration>
+        </DMVData>
+        <IsSalvageTitle>false</IsSalvageTitle>
+      </OtherData>
+    </Collateral>
+  </Collaterals>
+  <Decision ID="654321" DecisionType="System Decision" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Status>Counter</Status>
+    <Date>2023-08-16T12:15:00.0-07:00</Date>
+    <IsCurrent>true</IsCurrent>
+    <Rate>3.7500</Rate>
+    <Amount>18000.0000</Amount>
+    <Term>60</Term>
+    <Tier>B</Tier>
+    <UserCode>567</UserCode>
+    <PreApproval>
+      <WasPreApprovedChecked>true</WasPreApprovedChecked>
+      <IsPreApproved>false</IsPreApproved>
+    </PreApproval>
+    <Reasons>
+      <Reason>Limited credit history</Reason>
+      <Reason>Recent job change</Reason>
+    </Reasons>
+    <Stipulations>
+    </Stipulations>
+    <SpecialConsiderations>
+      <Consideration>Co-signer option</Consideration>
+      <Consideration>Additional down payment</Consideration>
+    </SpecialConsiderations>
+    <AuditData>
+      <CreatedByID>56789</CreatedByID>
+      <CreatedByName>SYSTEM</CreatedByName>
+      <UpdatedOn>2023-08-16T12:15:30.0-07:00</UpdatedOn>
+    </AuditData>
+    <OtherData>
+      <IsManual>false</IsManual>
+      <Notations>
+        <Notation>Counter offer based on credit evaluation</Notation>
+        <Notation>No stipulations required</Notation>
+      </Notations>
+      <EstimatedPayment>361.65</EstimatedPayment>
+    </OtherData>
+  </Decision>
+</LoanApplication>

@@ -1,0 +1,111 @@
+<LoanApplication>
+  <StageStatus xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Stage>Initial</Stage>
+    <Status>Counter</Status>
+  </StageStatus>
+  <Collaterals xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Collateral ID="543210">
+      <Make>HONDA</Make>
+      <Model>CR-V</Model>
+      <Year>2021</Year>
+      <Mileage>8000</Mileage>
+      <VehicleValuation ValuationType="MSRP">28000.0000</VehicleValuation>
+      <Ordinal>1</Ordinal>
+      <IsNew>false</IsNew>
+      <IsPrimary>true</IsPrimary>
+      <PurchasePrice>25000.0000</PurchasePrice>
+      <VehicleOptions>
+        <Option>Sunroof</Option>
+        <Option>Backup Camera</Option>
+        <Option>Bluetooth Connectivity</Option>
+      </VehicleOptions>
+      <AuditData>
+        <UpdatedOn>2023-08-16T10:00:00.0-07:00</UpdatedOn>
+      </AuditData>
+      <OtherData>
+        <DMVData>
+          <DMVLeinHolder>
+            <VehicleID>543210</VehicleID>
+            <LoanNumber />
+            <ApplicationID>543210987</ApplicationID>
+          </DMVLeinHolder>
+          <DMVRegistration>
+            <VehicleID>543210</VehicleID>
+            <IsNewOwner>true</IsNewOwner>
+            <SameAsApplicant>true</SameAsApplicant>
+            <ApplicationID>543210987</ApplicationID>
+            <DMVOwner>
+              <SameAsApplicant>true</SameAsApplicant>
+              <DriversLicenseNumber />
+              <IsPrimary>true</IsPrimary>
+              <DateOfBirth>1990-01-15</DateOfBirth>
+              <ApplicationID>543210987</ApplicationID>
+            </DMVOwner>
+          </DMVRegistration>
+        </DMVData>
+        <IsSalvageTitle>false</IsSalvageTitle>
+      </OtherData>
+    </Collateral>
+  </Collaterals>
+  <Decision ID="678901" DecisionType="System Decision" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Status>Counter</Status>
+    <Date>2023-08-16T10:15:00.0-07:00</Date>
+    <IsCurrent>true</IsCurrent>
+    <Rate>4.1250</Rate>
+    <Amount>20000.0000</Amount>
+    <Term>48</Term>
+    <Tier>C</Tier>
+    <UserCode>456</UserCode>
+    <PreApproval>
+      <WasPreApprovedChecked>true</WasPreApprovedChecked>
+      <IsPreApproved>false</IsPreApproved>
+    </PreApproval>
+    <Reasons>
+      <Reason>Higher debt-to-income ratio</Reason>
+      <Reason>Short credit history</Reason>
+    </Reasons>
+    <Stipulations>
+      <Stipulation ID="543210">
+        <Description>Proof of Income</Description>
+        <AuditData />
+        <OtherData>
+          <IsCompleted>false</IsCompleted>
+          <IsWaived>false</IsWaived>
+        </OtherData>
+      </Stipulation>
+      <Stipulation ID="543211">
+        <Description>Employment Verification</Description>
+        <AuditData />
+        <OtherData>
+          <IsCompleted>false</IsCompleted>
+          <IsWaived>false</IsWaived>
+        </OtherData>
+      </Stipulation>
+      <Stipulation ID="543212">
+        <Description>Proof of Identity</Description>
+        <AuditData />
+        <OtherData>
+          <IsCompleted>false</IsCompleted>
+          <IsWaived>false</IsWaived>
+        </OtherData>
+      </Stipulation>
+    </Stipulations>
+    <SpecialConsiderations>
+      <Consideration>Co-signer possibility</Consideration>
+      <Consideration>Additional income sources</Consideration>
+    </SpecialConsiderations>
+    <AuditData>
+      <CreatedByID>56789</CreatedByID>
+      <CreatedByName>SYSTEM</CreatedByName>
+      <UpdatedOn>2023-08-16T10:15:30.0-07:00</UpdatedOn>
+    </AuditData>
+    <OtherData>
+      <IsManual>false</IsManual>
+      <Notations>
+        <Notation>Higher rate due to credit history</Notation>
+        <Notation>Additional stipulations required</Notation>
+      </Notations>
+      <EstimatedPayment>465.63</EstimatedPayment>
+    </OtherData>
+  </Decision>
+</LoanApplication>

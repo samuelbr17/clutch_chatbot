@@ -1,0 +1,110 @@
+<LoanApplication>
+  <StageStatus xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Stage>Final</Stage>
+    <Status>Declined</Status>
+  </StageStatus>
+  <Collaterals xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Collateral ID="987654">
+      <Make>CHEVROLET</Make>
+      <Model>Equinox</Model>
+      <Year>2020</Year>
+      <Mileage>12000</Mileage>
+      <VehicleValuation ValuationType="MSRP">24000.0000</VehicleValuation>
+      <Ordinal>1</Ordinal>
+      <IsNew>false</IsNew>
+      <IsPrimary>true</IsPrimary>
+      <PurchasePrice>22000.0000</PurchasePrice>
+      <VehicleOptions>
+        <Option>Remote Start</Option>
+        <Option>Apple CarPlay</Option>
+      </VehicleOptions>
+      <AuditData>
+        <UpdatedOn>2023-08-16T11:00:00.0-07:00</UpdatedOn>
+      </AuditData>
+      <OtherData>
+        <DMVData>
+          <DMVLeinHolder>
+            <VehicleID>987654</VehicleID>
+            <LoanNumber />
+            <ApplicationID>987654321</ApplicationID>
+          </DMVLeinHolder>
+          <DMVRegistration>
+            <VehicleID>987654</VehicleID>
+            <IsNewOwner>true</IsNewOwner>
+            <SameAsApplicant>true</SameAsApplicant>
+            <ApplicationID>987654321</ApplicationID>
+            <DMVOwner>
+              <SameAsApplicant>true</SameAsApplicant>
+              <DriversLicenseNumber />
+              <IsPrimary>true</IsPrimary>
+              <DateOfBirth>1988-09-10</DateOfBirth>
+              <ApplicationID>987654321</ApplicationID>
+            </DMVOwner>
+          </DMVRegistration>
+        </DMVData>
+        <IsSalvageTitle>false</IsSalvageTitle>
+      </OtherData>
+    </Collateral>
+  </Collaterals>
+  <Decision ID="678901" DecisionType="System Decision" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Status>Declined</Status>
+    <Date>2023-08-16T11:15:00.0-07:00</Date>
+    <IsCurrent>true</IsCurrent>
+    <Rate>0.0000</Rate>
+    <Amount>0.0000</Amount>
+    <Term>0</Term>
+    <Tier>N/A</Tier>
+    <UserCode>789</UserCode>
+    <PreApproval>
+      <WasPreApprovedChecked>true</WasPreApprovedChecked>
+      <IsPreApproved>false</IsPreApproved>
+    </PreApproval>
+    <Reasons>
+      <Reason>Insufficient credit history</Reason>
+      <Reason>High debt-to-income ratio</Reason>
+    </Reasons>
+    <Stipulations>
+      <Stipulation ID="987654">
+        <Description>Proof of Income</Description>
+        <AuditData />
+        <OtherData>
+          <IsCompleted>false</IsCompleted>
+          <IsWaived>false</IsWaived>
+        </OtherData>
+      </Stipulation>
+      <Stipulation ID="987655">
+        <Description>Employment Verification</Description>
+        <AuditData />
+        <OtherData>
+          <IsCompleted>false</IsCompleted>
+          <IsWaived>false</IsWaived>
+        </OtherData>
+      </Stipulation>
+      <Stipulation ID="987656">
+        <Description>Credit References</Description>
+        <AuditData />
+        <OtherData>
+          <IsCompleted>false</IsCompleted>
+          <IsWaived>false</IsWaived>
+        </OtherData>
+      </Stipulation>
+    </Stipulations>
+    <SpecialConsiderations>
+      <Consideration>Co-signer recommendation</Consideration>
+      <Consideration>Financial counseling</Consideration>
+    </SpecialConsiderations>
+    <AuditData>
+      <CreatedByID>56789</CreatedByID>
+      <CreatedByName>SYSTEM</CreatedByName>
+      <UpdatedOn>2023-08-16T11:15:30.0-07:00</UpdatedOn>
+    </AuditData>
+    <OtherData>
+      <IsManual>false</IsManual>
+      <Notations>
+        <Notation>Loan declined due to credit factors</Notation>
+        <Notation>Additional stipulations required</Notation>
+      </Notations>
+      <EstimatedPayment>0.00</EstimatedPayment>
+    </OtherData>
+  </Decision>
+</LoanApplication>
