@@ -10,7 +10,7 @@ class context_filter_llm_model():
                  model: str = 'bert-base-nli-mean-tokens'):
         self.questions_df = questions_df
         self.model = SentenceTransformer(model)
-        self.similarity_threshold = 0.75
+        self.similarity_threshold = 0.60
         self.boolean_threshold = 0.60
 
     def get_similarities(self, query: str) -> np.ndarray:
@@ -32,17 +32,20 @@ class context_filter_llm_model():
 
         # filter by similarity threshold
         df = df.loc[(df.similarity > self.similarity_threshold)]
-        # select all the max similarities
+        # select all the max similarities questions
         df = df.loc[df.similarity == df.similarity.max()]
 
         return df
     
-    
-    def filter_context(self, query: str):
+    def get_context_score(self, query: str) -> int:
 
         df = self.get_most_similar_questions(query)
 
         # take the mean of similarities (1= True, 0= False)
         boolean_score = df['Hal-Answers'].mean()
 
-        return boolean_score > self.boolean_threshold
+        # We return -1 if completely out of context, 0 if cannot answer the question and 1 if we can answer the question
+        if len(df)==0:
+            return -1
+        else:
+            return int(boolean_score > self.boolean_threshold)
